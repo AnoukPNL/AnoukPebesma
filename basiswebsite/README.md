@@ -158,7 +158,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/wireframe-breakdown-schets-fed-home.JPEG" width="375px" alt="breakdown van de hele pagina">
 
   ### de hele pagina: For kids
-  <img src="readme-images/..." width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown-schets-forkids.JPEG" width="375px" alt="breakdown van de hele pagina">
   
 
 </details>
@@ -172,6 +172,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken voor 1e voortgang</summary>
 
+  ### Vragen
+  1. Hoe maak ik gebruik van meerdere achtergrond foto's?
+  2. Als je voor surface plane hebt gekozen, moet de website dan ook nog responisve zijn?
+  3. Hoe kan je ervoor zorgen dat je screenreader pauze's neemt en niet van de header tot aan de footer aan een stuk door alles zegt?
+  
+  
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 

@@ -61,24 +61,87 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  - Gebruik je toetsenbord om je laptop te bedienen.
+  - Begint met een tutorial over hoe de commando's werken.
+  - De voice over praat heel snel en zonder pauzes.
+  - Het start en stop geluidje lijkt veel op elkaar.
+  - Speciale voice over toets, wordt alleen niet duidelijk gezegd wat je ermee moet.
+  - Hij vertelt niet hoe je de browser opent, als je het weet hoe je het moet doen lukt het maar anders niet.
+  - Hij leest de letters voor die je typt.
+
+  Screenreader met de site:
+  - Hij leest wel goed voor wat ieder linkje is en waar je heen gaat. Ook vertelt hij hoeveel onderdelen in de link zit.
+  - Hij vertelt alles in de site in een poging. Geen pauzes, niks. 
+  - De afbeeldingen leest hij voor als afbeelding. Word niet gezegd wat er op de afbeelding staat.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  - Kijken of je pauzes kan inlassen na ieder stukje tekst / artikel.
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  - Tabt goed naar artikels.
+  - Als je een artikel hebt gelezen en je denkt door te tabben naar je homepagina weer, moet je eerst langs alle browser buttons. Er is geen snelle terug naar home knop.
+  - Je ziet de focus door een wit kader om de knop.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  - Zowel een kader als de knop zelf een andere kleur maken voor de focus.
+  - Onderaan een artikel een terug naar home pagina knop maken.
 
 
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  - Met 1 hand is het moeilijk om overal bij te komen, je zou eerst je telefoon moeten neerleggen.
+  - Typen is moeilijk.
+  - Kleine knoppen mis je sneller.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  - Grotere knoppen.
 
+
+  #### Spasmes Parkinson
+  Hier korte omschrijving (met indien nodig afbeeldingen)
+  - Kleine letters is moeilijk te lezen.
+  - Headings zijn leesbaar.
+  - Scrollen werkt prima.
+  - Knoppen drukken is moeilijk. Je mist of drukt per ongeluk op een knop.
+  - Menu was moeilijk te bereiken.
+  - Bij afbeeldingen zijn details minder zichtbaar.
+
+  #### Concentratie (ballon)
+  Hier korte omschrijving (met indien nodig afbeeldingen)
+  - Plaatjes zijn goed te zien.
+  - Snel je flow kwijt.
+  - Tekst echt grondig lezen is niet te doen. 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  
+  Blurred vision
+  - Kleine knoppen zie je moeilijker.
+  - Kleine tekst is moeilijk te lezen.
+
+  Protanopia
+  - Het werkt prima, alleen je ziet alle kleuren wat anders.
+
+  Deutoranopia
+  -  Werkt prima, alles is leesbaar, je ziet alleen de kleuren wat anders.
+
+  Tritanopia
+  - Knoppen als login en learn more met en donkere achtergrond zijn goed te lezen, maar wanneer je het met een rode achtergrond hebt, is het vloekend.
+
+  Achromatopsia
+  - Geen kleur - werkt allemaal prima.
+
+
+  Brillen:
+
+  Contrafield loss
+  - Telefoon in een bepaalde hoek houden want anders kun je het niet lezen.
+  - Kleine letters zijn moeilijk te lezen.
+
+  Low contrast
+  - Contraste kleuren zijn een must.
+  - Kleine letters kosten wat inspanning om te lezen.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 

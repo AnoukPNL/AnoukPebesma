@@ -205,28 +205,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>uitwerken voor 2e voortgang</summary>
-
+ 
+  ### Vragen
+  
+  
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+1. Voor een tijd heb ik geprutst met mijn slider, in hoe ik of de tekst kon laten stoppen met door elkaar lopen of hoe ik de plaatjes netjes op dezelfde rij kon zetten. Hieronder 2 plaatjes van mijn code:
+  <img src="readme-images/html-slider.jpeg" width="375px">
+  <img src="readme-images/css-slider.jpeg" width="375px">
+  
 
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  ### Verdere punten vanuit het voortgangsgesprek
+ 1. 
 
 </details>
 

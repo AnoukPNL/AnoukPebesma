@@ -193,7 +193,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   ### Stand van zaken
   Dit is hoe mijn home pagina eruit zag tijdens het voortgangsgesprek:
-
+  <img src="readme-images/fed-voortgangsgesprek-v1.jpeg" width="375px">
 
 </details>
 

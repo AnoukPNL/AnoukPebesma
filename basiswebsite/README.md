@@ -207,7 +207,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2e voortgang</summary>
  
   ### Vragen
-  
+1. Hoe kan ik het best mijn css gebruiken met de 2e pagina? Er zullen namelijk veel selectoren al gebruikt zijn op de eerste pagina in een andere manier dan hoe ik ze zou moeten gebruiken op de tweede pagina.
   
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)

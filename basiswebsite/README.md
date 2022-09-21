@@ -215,6 +215,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/html-slider.jpeg" width="375px">
   <img src="readme-images/css-slider.jpeg" width="375px">
   
+  Tot nu toe ziet zo de home pagina eruit:
+  <img src="readme-images/fed-voortgangsgesprek-v2.jpeg" width="375px">
+  
+  
 
   ### Verdere punten vanuit het voortgangsgesprek
  1. 

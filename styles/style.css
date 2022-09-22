@@ -1,0 +1,304 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+button, summary {
+	cursor: pointer;
+}
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:rgb(255, 255, 255);
+	--color-background:#10141b;
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+
+body {
+  color:var(--color-text);
+  background-color:var(--color-background);
+
+  margin: 0;
+
+}
+
+
+
+/****************/
+/* Pagina: Home */
+/****************/
+
+/***************** Algemeen *****************/
+body ul{
+	list-style-type: none;
+}
+
+section{
+	width: 24em;
+	margin-bottom: 4em;
+}
+
+
+h2{
+	font-family: 'Merriweather', 'Times', 'Times New Roman', 'serif';
+}
+
+h3{
+	font-family: 'Merriweather', 'Times', 'Times New Roman', 'serif';
+}
+
+p{
+	font-family: 'Montserrat', 'optima',sans-serif;
+	font-size: .8em;
+}
+
+a{
+	font-family: 'Montserrat', 'optima',sans-serif;
+}
+
+
+body a{
+	text-decoration: none;
+	color:var(--color-text);
+}
+
+
+img{
+	width: 20em;
+}
+
+
+button{
+	border-radius: 2em;
+	height: 3em;
+	width: 11.6em;
+
+	background-color: #514a92;
+	color:var(--color-text);
+
+	text-transform: uppercase;
+}
+
+/***************** Header *****************/
+header {
+	display: flex;
+	padding-top: 1em;
+	justify-content: space-around;
+	align-items: center;
+}
+
+header a img:nth-of-type(1){
+	width: 5em;
+}
+
+header a:nth-of-type(2){
+	display: flex;
+	justify-content: space-around;
+
+	border: solid .8em #514a92;
+	border-radius: .5em;
+	background-color: #514a92;
+	height: 2em;
+	width: 6em;
+
+	font-size: 0.8em;
+	align-items: center;
+
+	text-align: center;
+
+	text-transform: uppercase;
+}
+
+/* Nav */
+nav:first-of-type {
+	display: none;
+}
+
+nav:first-of-type.open {
+	display: block;
+}
+
+/***************** Main *****************/
+/* header idee */
+section:nth-of-type(1){
+	display: flex;
+	background-image: url("images/bghome.jpg");
+
+	/* Bron: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Resizing_background_images*/
+	background-size: 24em 18em;
+	height: 16em;
+}
+
+section:nth-of-type(1) ul{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1{
+	text-align: center;
+}
+
+section:nth-of-type(1) a{
+	justify-content: space-around;
+
+	border: solid .8em #514a92;
+	border-radius: 2em;
+	background-color: #514a92;
+	height: 3em;
+	width: 11.6em;
+
+	align-items: center;
+
+	color:var(--color-text);
+	text-align: center;
+	font-family: 'Montserrat', 'optima',sans-serif;
+
+	text-transform: uppercase;
+}
+
+
+
+/* Vertical scroll - slider */
+/* Gebruik gemaakt van deze bron: https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6 */
+section:nth-of-type(2){
+	display: flex;
+
+	overflow-x: scroll;
+	overflow-y: hidden;
+
+	white-space: nowrap;
+}
+
+section:nth-of-type(2) ul{
+	position: relative;
+}
+
+section:nth-of-type(2) li{
+	display: inline-block;
+	width: 25rem;
+	height: 15rem;
+}
+
+section:nth-of-type(2) img{
+	position: absolute;
+	top: 0;
+}
+
+section:nth-of-type(2) h3{
+	position: absolute;
+	top: 11rem;
+}
+
+
+
+/* artikelen */
+section:nth-of-type(3) li:nth-of-type(even){
+	text-align: right;
+	padding-right: 1em;
+}
+
+section:nth-of-type(3) li:nth-of-type(odd){
+	padding-right: 1em;
+}
+
+section:nth-of-type(3) button {
+	margin-bottom: 3em;
+}
+
+
+
+/* Latest news */
+section:nth-of-type(4) a{
+	display: flex;
+	align-items: center;
+	margin-right: 1em;
+	margin-bottom: 3em;
+	gap: 1em;
+	border-bottom: solid .1em var(--color-text);
+}
+
+section:nth-of-type(4) h3{
+	font-size: 1em;
+}
+
+section:nth-of-type(4) img{
+	width: 10em;	
+}
+
+
+
+/* Magical features */
+/* section:nth-of-type(5) {
+	background-color: darkkhaki;
+} */
+
+section:nth-of-type(5) li{
+	border: solid .1em #fff;
+	margin: 1.65em;	
+}
+
+section:nth-of-type(5) img{
+	width: 18em;
+	justify-content: space-between;
+}
+
+section:nth-of-type(5) h3{
+	padding-left: 1em;
+}
+
+
+/***************** Footer *****************/
+footer{
+	border: solid .05em var(--color-text);
+
+	margin: 1em;
+	margin-left: 4em;
+
+	display: flex;
+	flex-direction: column;
+}
+
+nav:nth-of-type(2) ul:nth-of-type(1){
+	width: 5em;
+}
+
+footer nav li img {
+	width: 8em;	
+	padding-bottom: 1em;
+}
+
+footer img{
+	width: 3em;	
+}
+
+footer li{
+	text-align: center;
+}
+
+footer a{
+	font-family: 'Montserrat', 'optima',sans-serif;
+	font-size: .8em;
+}
+
+footer ul{
+	margin-left: -2em;
+}

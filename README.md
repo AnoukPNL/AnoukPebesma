@@ -40,7 +40,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home pagina
-  <img src="readme-images/home-pagina-idee.jp" width="375px" alt="home pagina, wat sliders met knoppen en een header.">
+  <img src="readme-images/home-pagina-idee.jpg" width="375px" alt="home pagina, wat sliders met knoppen en een header.">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   For kids pagina
@@ -154,14 +154,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
-  ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  ### de hele pagina: Home
+  <img src="readme-images/wireframe-breakdown-schets-fed-home.JPEG" width="375px" alt="breakdown van de hele pagina">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  ### de hele pagina: For kids
+  <img src="readme-images/breakdown-schets-forkids.JPEG" width="375px" alt="breakdown van de hele pagina">
+  
 
 </details>
 
@@ -174,27 +172,28 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken voor 1e voortgang</summary>
 
+  ### Vragen
+  1. Hoe maak ik gebruik van meerdere achtergrond foto's?
+      Achtergrond foto's kan je invoegen met css. Dus je kan verschillende achtergrond foto's plaatsen, 1 in iedere sectie bijv.
+  2. Als je voor surface plane hebt gekozen, moet de website dan ook nog responisve zijn?
+      Ja en nee, alleen voor kleine en grote telefoons moet hij responsive zijn, niet responsive voor desktop.
+  3. Hoe kan je ervoor zorgen dat je screenreader pauze's neemt en niet van de header tot aan de footer aan een stuk door alles zegt?
+      Dit is een instelling in de instellingen van de screenreader, dit kan je dus niet aanpassen in de code.
+  4. Hoe moet ik mijn CSS indelen, wat is het handigst?
+      Begin met de generieke elementen voor beide pagina's, daarna begin je met de eerste pagina > sections, header, main, etc & daarna doe je hetzelfde
+      voor de volgende pagina: sections, header, main, etc.
+
+  
+  
+  ### Verdere punten vanuit het voortgangsgesprek.
+  1. Een logo kan een H1 zijn, alt op het plaatje zetten op een H1, zodat de screenreader dit ziet.
+  2. Als je ergens heen gaat is het een link, als je op dezelfde pagina gaat is het een button.
+ 
+ 
+  
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  Dit is hoe mijn home pagina eruit zag tijdens het voortgangsgesprek:
+  <img src="readme-images/fed-voortgangsgesprek-v1.jpeg" width="375px">
 
 </details>
 
@@ -206,28 +205,23 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>uitwerken voor 2e voortgang</summary>
-
+ 
+  ### Vragen
+1. Hoe kan ik het best mijn css gebruiken met de 2e pagina? Er zullen namelijk veel selectoren al gebruikt zijn op de eerste pagina in een andere manier dan hoe ik ze zou moeten gebruiken op de tweede pagina.
+  
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+1. Voor een tijd heb ik geprutst met mijn slider, in hoe ik of de tekst kon laten stoppen met door elkaar lopen of hoe ik de plaatjes netjes op dezelfde rij kon zetten. Hieronder 2 plaatjes van mijn code:
+  <img src="readme-images/html-slider.jpeg" width="375px">
+  <img src="readme-images/css-slider.jpeg" width="375px">
+  
+  Tot nu toe ziet zo de home pagina eruit:
+  <img src="readme-images/fed-voortgangsgesprek-v2.jpeg" width="375px">
+  
+  
 
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  ### Verdere punten vanuit het voortgangsgesprek
+ 1. 
 
 </details>
 

@@ -105,11 +105,11 @@ header {
 	align-items: center;
 }
 
-header a img:nth-of-type(1){
-	width: 5em;
+header a h1 img:nth-of-type(1){
+	width: 2.5em;
 }
 
-header a:nth-of-type(2){
+header a:nth-of-type(3){
 	display: flex;
 	justify-content: space-around;
 
@@ -128,13 +128,32 @@ header a:nth-of-type(2){
 }
 
 /* Nav */
+header a img:first-of-type{
+	width: 2em;
+	margin-left: 1em;
+}
+
 nav:first-of-type {
 	display: none;
 }
 
 nav:first-of-type.open {
 	display: block;
+
+	background-color: #514a92;
+	position: absolute;
+	width: 8em;
+
+	padding-top: 8em;
+	padding-left: -1em;
+	padding-right: 25em;
 }
+
+
+header a img:nth-of-type(2){
+	width: 2em;
+}
+
 
 /***************** Main *****************/
 /* header idee */
@@ -302,3 +321,138 @@ footer a{
 footer ul{
 	margin-left: -2em;
 }
+
+
+
+
+
+
+
+/****************/
+/* Pagina: For kids */
+/****************/
+
+/***************** Algemeen *****************/
+#forkids img {
+	width: 9em;
+}
+
+#forkids h3{
+	font-size: 1em;
+	font-family: 'Merriweather', 'Times', 'Times New Roman', 'serif';
+}
+
+#forkids h2{
+	font-size: 2em;
+	font-family: 'Merriweather', 'Times', 'Times New Roman', 'serif';
+}
+
+#forkids p{
+	font-family: 'Montserrat', 'optima',sans-serif;
+	font-size: .8em;
+}
+
+#forkids button{
+	border-radius: 2em;
+	height: 3em;
+	width: 11.6em;
+
+	background-color: burlywood;
+	color:var(--color-text);
+
+	text-transform: uppercase;
+}
+
+#forkids section ul li a{
+	border-radius: 2em;
+	height: 3em;
+	width: 11.6em;
+
+	background-color: #ffc213;
+	color:var(--color-text);
+
+	text-transform: uppercase;
+}
+
+/***************** Header *****************/
+#forkids section:nth-of-type(1){
+	background-image: none;
+}
+
+#forkids header {
+	background-color: #9e0a24;
+}
+
+#forkids header nav a img {
+	width: 5em;
+}
+
+#forkids nav:first-of-type{
+	display: flex;
+
+	flex-direction: column;
+	align-items: center;
+}
+
+#forkids nav ul{
+	display: flex;
+}
+
+#forkids header nav ul{
+	flex-direction: row;
+}
+
+#forkids header nav ul li{
+	flex-direction: column;
+	/* background-color: green; */
+}
+
+#forkids header nav ul li img{
+	width: 4em;
+}
+
+#forkids nav h2{
+	color: #ffc213;
+	font-family: 'Merriweather', 'Times', 'Times New Roman', 'serif';
+}
+
+
+
+/***************** Main *****************/
+
+/* Vertical scroll - slider */
+/* Gebruik gemaakt van deze bron: https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6 */
+#forkids section:nth-of-type(1){
+	display: flex;
+
+	overflow-x: scroll;
+	overflow-y: hidden;
+
+	white-space: nowrap;
+}
+
+#forkids section:nth-of-type(1) ul{
+	position: relative;
+}
+
+#forkids section:nth-of-type(1) li{
+	display: inline-block;
+	width: 25rem;
+	height: 15rem;
+}
+
+#forkids section:nth-of-type(1) img{
+	position: absolute;
+	top: 0;
+}
+
+#forkids section:nth-of-type(1) h3{
+	position: absolute;
+	top: 11rem;
+}
+
+
+
+
+
+/***************** Footers *****************/

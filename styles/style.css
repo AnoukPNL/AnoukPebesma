@@ -16,14 +16,115 @@ button, summary {
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
+
+ /* ------------- Home ------------- */
 :root {
 	/* startje */
 	--color-text:rgb(255, 255, 255);
 	--color-background:#10141b;
+	--color-button: #514a92;
+	--color-button-text: #ffffff;
+
+	--color-button-nav: #514a92;
+	--color-text-nav:rgb(255, 255, 255);
+
+	--color-focus: #9e0a24;
 }
 
+@media (prefers-color-scheme:light) {
+	:root {
+		--color-text:#10141b;
+		--color-background:rgb(168, 160, 197);
+		--color-button: #514a92;
+		--color-button-text: #ffffff;
+
+		--color-button-nav: #514a92;
+		--color-text-nav:rgb(255, 255, 255);
+
+		--color-focus: #9e0a24;
+	}
+   }
+
+   @media (prefers-contrast: more) {
+	:root {
+		--color-text:#ffffff;
+		--color-background:rgb(0, 0, 0);
+		--color-button: #ffffff;
+		--color-button-text: #000000;
+
+		--color-button-nav:rgb(0, 0, 0);
+		--color-text-nav:rgb(255, 255, 255);
+
+		--color-focus: #9e0a24;
+	}
+   }
 
 
+   /* ------------- For kids ------------- */
+:root #forkids {
+	/* startje */
+	--color-text:rgb(255, 255, 255);
+	--color-background:#100412;
+	
+	--color-button: #ffc213;
+
+	--color-background-start: #9e0a24;
+	--color-background-slider-explore: #18105c;
+	--color-background-explore-button:#231972;
+	--color-background-play: #003027;
+	--color-background-play-button: #01372e;
+	--color-background-making-magic: #e7dcd4;
+	--color-text-black: #000000;
+	--color-background-first-book: #410919;
+	--color-background-slider-text: none;
+
+	--color-focus: #f07b91;
+}
+
+@media (prefers-color-scheme:light) {
+	:root #forkids {
+		--color-text:#100412;
+		--color-background:rgb(255, 255, 255);
+
+		--color-button: #ffc213;
+
+		--color-background-start: #f07b91;
+		--color-background-slider-explore: #988fe9;
+		--color-background-explore-button:#c7c1f7;
+		--color-background-play: #97d89a;
+		--color-background-play-button: #bbf0b9;
+		--color-background-making-magic: #e7dcd4;
+		--color-text-black: #000000;
+		--color-background-first-book: #cf8fa1;
+		--color-background-slider-text: none;
+
+		--color-focus: #9e0a24;
+	}
+   }
+
+
+   @media (prefers-contrast: more) {
+	:root #forkids {
+		--color-text:#000000;
+		--color-background:#ececec;
+
+		--color-button: #000000;
+
+		--color-background-start: #ececec;
+		--color-background-slider-explore: #ffffff;
+		--color-background-explore-button:#ececec;
+		--color-background-play: #ececec;
+		--color-background-play-button: #ffffff;
+		--color-background-text-a: #000000;
+		--color-background-making-magic: #ececec;
+		--color-text-black: #ffffff;
+		--color-text-black-making-magic: #000000;
+		--color-background-first-book: #ffffff;
+		--color-background-slider-text: #ffffff;
+
+		--color-focus: #9e0a24;
+	}
+   }
 
 
 /****************/
@@ -40,6 +141,46 @@ body {
 
 }
 
+/* Knoppen states */
+
+
+a:focus{
+	border: dashed .3em var(--color-focus);
+	background-color: var(--color-focus);
+	text-decoration: underline;
+}
+
+button:focus{
+	border: dashed .3em var(--color-focus);
+	background-color: var(--color-focus);
+	text-decoration: underline;
+}
+
+li:focus{
+	border: dashed .6em var(--color-focus);
+	background-color: var(--color-focus);
+	text-decoration: underline;
+}
+
+
+
+a:focus #forkids{
+	border: dashed .3em var(--color-focus);
+	background-color: var(--color-focus);
+	text-decoration: underline;
+}
+
+button:focus #forkids{
+	border: dashed .3em var(--color-focus);
+	background-color: var(--color-focus);
+	text-decoration: underline;
+}
+
+li:focus #forkids{
+	border: dashed .6em var(--color-focus);
+	background-color: var(--color-focus);
+	text-decoration: underline;
+}
 
 
 /****************/
@@ -56,6 +197,10 @@ section{
 	margin-bottom: 4em;
 }
 
+
+h1{
+	color:var(--color-button-text);
+}
 
 h2{
 	font-family: 'Merriweather', 'Times', 'Times New Roman', 'serif';
@@ -91,18 +236,29 @@ button{
 	height: 3em;
 	width: 11.6em;
 
-	background-color: #514a92;
-	color:var(--color-text);
+	background-color: var(--color-button);
+	color:var(--color-button-text);
+	border:none;
 
 	text-transform: uppercase;
 }
 
 /***************** Header *****************/
-header {
+#home header {
 	display: flex;
 	padding-top: 1em;
 	justify-content: space-around;
 	align-items: center;
+
+	/* Sticky menu */
+	position: fixed;
+	background-color: var(--color-background);
+	height: 7em;
+	width: 24em;
+
+	/* Gaat over de diepte van de code */
+	z-index: 1;
+	
 }
 
 header a h1 img:nth-of-type(1){
@@ -113,9 +269,8 @@ header a:nth-of-type(3){
 	display: flex;
 	justify-content: space-around;
 
-	border: solid .8em #514a92;
 	border-radius: .5em;
-	background-color: #514a92;
+	background-color: var(--color-button);
 	height: 2em;
 	width: 6em;
 
@@ -125,6 +280,9 @@ header a:nth-of-type(3){
 	text-align: center;
 
 	text-transform: uppercase;
+
+	color:var(--color-button-text);
+	
 }
 
 /* Nav */
@@ -133,37 +291,46 @@ header a img:first-of-type{
 	margin-left: 1em;
 }
 
-nav:first-of-type {
+header nav:first-of-type {
 	display: none;
 }
 
-nav:first-of-type.open {
+header nav:first-of-type.open {
 	display: block;
 
-	background-color: #514a92;
+	background-color: var(--color-button-nav);
 	position: absolute;
-	width: 8em;
+	width: 25em;
+
 
 	padding-top: 8em;
-	padding-left: -1em;
-	padding-right: 25em;
 }
 
+#home header nav:first-of-type a{
+	font-size: 1.5em;
+	color:var(--color-text-nav);
+}
 
-header a img:nth-of-type(2){
-	width: 2em;
+#home header nav:first-of-type li{
+	padding-bottom: 1.5em;
 }
 
 
 /***************** Main *****************/
 /* header idee */
-section:nth-of-type(1){
+#home section:nth-of-type(1){
+	/* Padding van sticky menu - bron: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp*/
+	padding-top: 8em;
+
+	/* bron: https://developer.mozilla.org/en-US/docs/Web/CSS/background-position-x */
+	background-position-y:  6em;
+
 	display: flex;
 	background-image: url("images/bghome.jpg");
 
 	/* Bron: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Resizing_background_images*/
 	background-size: 24em 18em;
-	height: 16em;
+	height: 24em;
 }
 
 section:nth-of-type(1) ul{
@@ -177,17 +344,17 @@ h1{
 }
 
 section:nth-of-type(1) a{
+	display: flex;
 	justify-content: space-around;
 
-	border: solid .8em #514a92;
 	border-radius: 2em;
-	background-color: #514a92;
+	background-color: var(--color-button);
 	height: 3em;
 	width: 11.6em;
 
 	align-items: center;
 
-	color:var(--color-text);
+	color:var(--color-button-text);
 	text-align: center;
 	font-family: 'Montserrat', 'optima',sans-serif;
 
@@ -198,7 +365,7 @@ section:nth-of-type(1) a{
 
 /* Vertical scroll - slider */
 /* Gebruik gemaakt van deze bron: https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6 */
-section:nth-of-type(2){
+#home section:nth-of-type(2){
 	display: flex;
 
 	overflow-x: scroll;
@@ -207,24 +374,26 @@ section:nth-of-type(2){
 	white-space: nowrap;
 }
 
-section:nth-of-type(2) ul{
+#home section:nth-of-type(2) ul{
 	position: relative;
 }
 
-section:nth-of-type(2) li{
+#home section:nth-of-type(2) li{
 	display: inline-block;
 	width: 25rem;
 	height: 15rem;
 }
 
-section:nth-of-type(2) img{
+#home section:nth-of-type(2) img{
 	position: absolute;
 	top: 0;
 }
 
-section:nth-of-type(2) h3{
+#home section:nth-of-type(2) h3{
 	position: absolute;
 	top: 11rem;
+
+	color: var(--color-text);
 }
 
 
@@ -271,7 +440,7 @@ section:nth-of-type(4) img{
 } */
 
 section:nth-of-type(5) li{
-	border: solid .1em #fff;
+	border: solid .1em var(--color-text);
 	margin: 1.65em;	
 }
 
@@ -287,7 +456,7 @@ section:nth-of-type(5) h3{
 
 /***************** Footer *****************/
 footer{
-	border: solid .05em var(--color-text);
+	border: solid .1em var(--color-text);
 
 	margin: 1em;
 	margin-left: 4em;
@@ -333,6 +502,10 @@ footer ul{
 /****************/
 
 /***************** Algemeen *****************/
+#forkids body{
+	background-color:var(--color-background);
+}
+
 #forkids img {
 	width: 9em;
 }
@@ -357,34 +530,27 @@ footer ul{
 	height: 3em;
 	width: 11.6em;
 
-	background-color: burlywood;
+	background-color: var(--color-button);
 	color:var(--color-text);
 
 	text-transform: uppercase;
 }
 
-#forkids section ul li a{
-	border-radius: 2em;
-	height: 3em;
-	width: 11.6em;
-
-	background-color: #ffc213;
-	color:var(--color-text);
-
-	text-transform: uppercase;
-}
 
 /***************** Header *****************/
+/* Navigatie */
 #forkids section:nth-of-type(1){
 	background-image: none;
 }
 
 #forkids header {
-	background-color: #9e0a24;
+	background-color: var(--color-background-start);
+	margin-top: -1.5em;
+	margin-right: -.5em;
 }
 
 #forkids header nav a img {
-	width: 5em;
+	width: 6em;
 }
 
 #forkids nav:first-of-type{
@@ -392,6 +558,8 @@ footer ul{
 
 	flex-direction: column;
 	align-items: center;
+
+	padding-top: 2em;
 }
 
 #forkids nav ul{
@@ -400,11 +568,21 @@ footer ul{
 
 #forkids header nav ul{
 	flex-direction: row;
+	margin: 0;
+	padding: 0;
+}
+
+#forkids nav a{
+	display: flex;
+	flex-direction: column;
 }
 
 #forkids header nav ul li{
 	flex-direction: column;
-	/* background-color: green; */
+}
+
+header a img:first-of-type{
+	margin-left: 0;
 }
 
 #forkids header nav ul li img{
@@ -412,8 +590,9 @@ footer ul{
 }
 
 #forkids nav h2{
-	color: #ffc213;
+	color: var(--color-button);
 	font-family: 'Merriweather', 'Times', 'Times New Roman', 'serif';
+	font-size: 1.5em;
 }
 
 
@@ -429,15 +608,19 @@ footer ul{
 	overflow-y: hidden;
 
 	white-space: nowrap;
+	background-color: var(--color-background-slider-explore);
+
+	margin-bottom: 0;
 }
 
 #forkids section:nth-of-type(1) ul{
 	position: relative;
+	flex-direction: row;
 }
 
 #forkids section:nth-of-type(1) li{
 	display: inline-block;
-	width: 25rem;
+	width: 14rem;
 	height: 15rem;
 }
 
@@ -449,10 +632,264 @@ footer ul{
 #forkids section:nth-of-type(1) h3{
 	position: absolute;
 	top: 11rem;
+	background-color: var(--color-background-slider-text);
+}
+
+#forkids section:nth-of-type(1) a{
+	display: flex;
+	border: none;
+	background-color: var(--color-background-slider-explore);
+	color: var(--color-background-text-a);
+}
+
+
+/* Explore section */
+#forkids section:nth-of-type(2){
+	background-color: var(--color-background-slider-explore);
+
+	padding-top: 1em;
+	padding-bottom: 4em;
+	margin-bottom: -1em;
+}
+
+#forkids section:nth-of-type(2) ul{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin-left: -2em;
+	gap: 2em;
+}
+
+#forkids section:nth-of-type(2) ul li{
+	text-align: center;
+	
+	background-color:var(--color-background-explore-button);
+	border-radius: 1em;
+	width: 18em;
+}
+
+#forkids section:nth-of-type(2) h3{
+	font-family: 'Montserrat', 'optima',sans-serif;
+}
+	
+
+#forkids section:nth-of-type(2) img{
+	width: 18em;
+	border-radius: 1em;
+	
+}
+
+/* Button explore more */
+#forkids section:nth-of-type(2) ul li:nth-of-type(4) a{
+	text-align: center;
+	
+
+	background-color: var(--color-button);
+	border: solid .5em transparent;
+	border-radius: .5em;
+
+	font-size: 1.5em;
+	color: var(--color-text-black);
+}
+
+#forkids section:nth-of-type(2) ul li:nth-of-type(4){
+	background-color: var(--color-background-slider-explore);
+	border-radius: 1em;
+}
+
+
+/* Play section */
+#forkids section:nth-of-type(3){
+	background-color: var(--color-background-play);
+
+	padding-top: 2em;
+	padding-bottom: 2em;
+	margin-bottom: -1em;
+}
+
+#forkids section:nth-of-type(3) ul{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin-left: -2em;
+	margin-top: -1em;
+	gap: 2em;
+}
+
+#forkids section:nth-of-type(3) ul li{
+	text-align: center;
+	flex-direction: row;
+	gap: 1em;
+
+	background-color: var(--color-background-play-button);
+	border: solid .2em var(--color-background-play-button);
+	border-radius: 1em;
+	width: 18em;
+}
+
+#forkids section:nth-of-type(3) h3{
+	font-family: 'Montserrat', 'optima',sans-serif;
+}
+	
+#forkids section:nth-of-type(3) img{
+	width: 6em;
+	border-radius: 1em;
+}	
+
+
+/* Button see all activities */
+#forkids section:nth-of-type(3) ul li:nth-of-type(4) a{
+	text-align: center;
+	
+
+	background-color: var(--color-button);
+	border: solid .5em var(--color-button);
+	border-radius: .5em;
+
+	font-size: 1.5em;
+	color: var(--color-text-black);
+}
+
+#forkids section:nth-of-type(3) ul li:nth-of-type(4){
+	background-color: var(--color-background-play);
+	border: none;
+	border-radius: 1em;
 }
 
 
 
+/* Making Magic section */
+#forkids section:nth-of-type(4){
+	background-color: var(--color-background-making-magic);
+
+	color: var(--color-text-black);
+	padding-top: .1em;
+	padding-bottom: .1em;
+	margin-bottom: -1em;
+}
+
+#forkids section:nth-of-type(4) img{
+	border-radius: 1em;
+	padding: .2em;
+	height: 10em;
+	width: 10em;
+}
+
+#forkids section:nth-of-type(4) h2{
+	text-align: center;
+}
+
+#forkids section:nth-of-type(4) p{
+	font-size: 1em;
+	text-align: center;
+}
+
+
+/* Button Making Magic */
+#forkids section:nth-of-type(4) ul li:nth-of-type(1) a{
+	justify-content: center;
+	
+	background-color: var(--color-button);
+	border: solid .5em var(--color-button);
+	border-radius: .5em;
+
+	font-size: 1.5em;
+	color: var(--color-text-black);
+}
+
+#forkids section:nth-of-type(4) ul li:nth-of-type(1){
+	border: none;
+	border-radius: 1em;
+
+	padding-top: 1em;
+}
+
+
+/* first harry section */
+#forkids section:nth-of-type(5){
+	background-color: var(--color-background-first-book);
+	display: flex;
+
+	padding-top: 2em;
+	padding-bottom: 2em;
+	margin-bottom: -1em;
+}
+
+#forkids section:nth-of-type(5) ul{
+	text-align: center;
+	padding-left: 0;
+	margin-top: -1em;
+}
+
+#forkids section:nth-of-type(5) p:nth-of-type(1){
+	color: var(--color-button);
+	font-family: 'Merriweather', 'Times', 'Times New Roman', 'serif';
+	font-size: 1.5em;
+}
+
+#forkids section:nth-of-type(5) p:nth-of-type(2){
+	font-size: 1em;
+}
+
+#forkids section:nth-of-type(5) img{
+	width: 12em;
+}
+
+/* Button first harry */
+#forkids section:nth-of-type(5) ul li:nth-of-type(1) a{
+	justify-content: center;
+	
+	background-color: var(--color-button);
+	border: solid .5em var(--color-button);
+	border-radius: .5em;
+
+	font-size: 1.5em;
+	color: var(--color-text-black);
+}
+
+#forkids section:nth-of-type(5) ul li:nth-of-type(1){
+	border: none;
+	border-radius: 1em;
+
+	padding-top: 1em;
+}
+
 
 
 /***************** Footers *****************/
+#forkids footer{
+	background-color: var(--color-background);
+
+	margin: 0em;
+	margin-left: 0em;
+	margin-right: -.6em;
+
+	display: flex;
+	flex-direction: column;
+
+	border: none;
+
+	height: 20em;
+
+}
+
+#forkids footer a{
+	font-family: 'Montserrat', 'optima',sans-serif;
+	font-size: 1em;
+}
+
+#forkids footer ul{
+	flex-direction: column;
+	margin-top: 1em;
+}
+
+#forkids footer nav{
+	background-color: var(--color-background);
+	margin-top: 1.5em;
+}
+
+#forkids footer li{
+	padding-bottom: 1em;
+}

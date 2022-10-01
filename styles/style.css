@@ -126,6 +126,18 @@ button, summary {
 	}
    }
 
+   /* Thema switch - Kerst */ 
+:root.newtheme header {
+	--color-background:#570202;
+	--color-button-nav: #570202;
+	--color-button-text: #000000;
+} 
+ 
+   :root.newtheme body {
+	--color-background:#002d26;
+	--color-button: #fcb00b;
+	--color-button-text: #000000;
+}
 
 /****************/
 /* JOUW STYLING */
@@ -212,13 +224,12 @@ h3{
 
 p{
 	font-family: 'Montserrat', 'optima',sans-serif;
-	font-size: .8em;
+	font-size: .9em;
 }
 
 a{
 	font-family: 'Montserrat', 'optima',sans-serif;
 }
-
 
 body a{
 	text-decoration: none;
@@ -435,10 +446,6 @@ section:nth-of-type(4) img{
 
 
 /* Magical features */
-/* section:nth-of-type(5) {
-	background-color: darkkhaki;
-} */
-
 section:nth-of-type(5) li{
 	border: solid .1em var(--color-text);
 	margin: 1.65em;	
@@ -463,6 +470,7 @@ footer{
 
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 nav:nth-of-type(2) ul:nth-of-type(1){
@@ -484,14 +492,20 @@ footer li{
 
 footer a{
 	font-family: 'Montserrat', 'optima',sans-serif;
-	font-size: .8em;
+	font-size: .9em;
 }
 
 footer ul{
 	margin-left: -2em;
 }
 
-
+/* thema switch */
+footer button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
 
 
 
@@ -833,8 +847,30 @@ header a img:first-of-type{
 	font-size: 1em;
 }
 
+
+/* animatie bron: https://imagekit.io/blog/creating-css-image-effects/ */
 #forkids section:nth-of-type(5) img{
 	width: 12em;
+
+	/* vibrate staat voor de naam voor de keyframes */
+	animation: rotate 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes rotate{
+	0% { transform: rotate(0deg);}
+	25% {transform: rotate(90deg);}
+	50% {transform: rotate(180deg);}
+	75% {transform: rotate(270deg);}
+	100% {transform: rotate(360deg);}
+}
+
+/* reduced motion bron: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion */
+@media (prefers-reduced-motion) {
+	#forkids section:nth-of-type(5) img {
+		animation: dissolve;
+	}
 }
 
 /* Button first harry */
@@ -855,7 +891,6 @@ header a img:first-of-type{
 
 	padding-top: 1em;
 }
-
 
 
 /***************** Footers *****************/
@@ -893,3 +928,4 @@ header a img:first-of-type{
 #forkids footer li{
 	padding-bottom: 1em;
 }
+

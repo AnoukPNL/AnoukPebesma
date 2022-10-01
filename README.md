@@ -217,11 +217,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   Tot nu toe ziet zo de home pagina eruit:
   <img src="readme-images/fed-voortgangsgesprek-v2.jpeg" width="375px">
-  
-  
 
-  ### Verdere punten vanuit het voortgangsgesprek
- 1. 
 
 </details>
 
@@ -236,29 +232,35 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  1. Iphone 8 forkids is de achtergrond niet helemaal op het goede formaat.
+  2. Home & forkids pagina is het kruisje png in de menu nog niet op github gezet.
+
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  1. Learn more knoppen zijn goed veranderd bij de home pagina, de forkids pagina moet nog.
+    - Lean more knoppen kan ik nog kijken met een aria label.
+  2. Er is een goede focus bij de knoppen, anderen zien waar je bent met je screen reader als je gebruikt.
+  3. De snelheid van je screenreader kan je veranderen bij: toegankelijkheid > voice over > voice over programma > spraak >
+     Snelheid. --> de gemiddelde snelheid is 45.
+  <img src="readme-images/screenreader.jpeg" width="375px">
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
-
-  #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  #### Muis en Toetsenbord
+  1. Met tabben zie je bij de homepagina niet welk artikel word geselecteerd bij de slider.
+  2. Verder zie je duidelijk waar je bent.
+  3. Er is een logische volgorde.
+  <img src="readme-images/tabben.jpeg" width="375px">
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Met de elastiekjes lukte het goed om door de website heen te klikken.
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  1. Met de hemifield loss bril leek er geen probleem te zijn.
+  2. Met de combined loss bril kon de <p> wat groter, maar verder was
+     alles goed.
+  3. Met de color #0779p bril was alleen op de for kids pagina bij de slider een stukje tekst niet al te goed leesbaar.
+  <img src="readme-images/kleur.jpg" width="375px">
+  
 
 </details>
 
@@ -271,27 +273,33 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken voor 3e voortgang</summary>
 
+  ### vragen 
+  1. Wat houd toegankelijkheid ++ in?
+  2. Wat is een praktische manier om je site naar github te zetten
+  
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  1. Ik ben deze week veel bezig geweest om de site in css zo goed mogelijk na te maken. En dan ook beide pagina's css klaar te hebben. 
+  2. Verder begonnen met de :root te veranderen in de pagina's en rekening te houden met color scheme preferances. 
+  3. Ik heb een thema switch knop gemaakt.
+  
+  Tot nu toe ziet zo de home pagina eruit:
+  
+  Home pagina:
+  <img src="readme-images/home-v3.png" width="375px">
 
+   Color scheme preferances:
+  <img src="readme-images/home-light.png" width="375px">
+  <img src="readme-images/home-contrast.png" width="375px">
+  
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
+  For kids pagina:
+  <img src="readme-images/forkids-v2.png" width="375px">
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  Color scheme preferances:
+  <img src="readme-images/forkids-contrast.png" width="375px">
+  <img src="readme-images/forkids-light.png" width="375px">
+  
 
 </details>
 
@@ -331,8 +339,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. Padding van sticky menu - bron: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
+  2. Background positioning - bron: https://developer.mozilla.org/en-US/docs/Web/CSS/background-position-x
+  3. Background images - bron: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Resizing_background_images
+  4. Vertical scroll slider - bron: https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6
+  5. Animatie op image - bron: https://imagekit.io/blog/creating-css-image-effects/
+  6. Prefers reduced motion - bron: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion 
+  7. Aria-label hoe werkt het? - bron: https://stackoverflow.com/questions/22039910/what-is-aria-label-and-how-should-i-use-it
+
 
 </details>

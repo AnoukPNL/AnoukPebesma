@@ -256,8 +256,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   1. Met de hemifield loss bril leek er geen probleem te zijn.
-  2. Met de combined loss bril kon de <p> wat groter, maar verder was
-     alles goed.
+  2. Met de combined loss bril kon de <p> wat groter, maar verder was alles goed.
   3. Met de color #0779p bril was alleen op de for kids pagina bij de slider een stukje tekst niet al te goed leesbaar.
   <img src="readme-images/kleur.jpg" width="375px">
   
@@ -312,20 +311,45 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken voor eindgesprek</summary>
 
-  ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  ### 5 dingen van surface plane
+  1. Dark / light mode
+  Ik heb mijn laptop altijd op dark mode staan, dus ik ben ook begonnen met het designen van de dark mode. Ik heb gezien dat hij bij anderen begon met de light modus, maar dan ziet het er toch net wat anders uit.
+  2. Custom theme
+  Ik heb bij de home pagina aan de onderkant van de pagina een thema switch button staan. Als je hier op klikt veranderd het thema naar een kerst thema.
+  3. Animatie toevoegen
+  Ik heb bij de for kids pagina een animatie op het uil plaatje toegevoegd. 
+  4. Geluid toevoegen
+  Als je op de animatie drukt van nummer 3, dan speelt er een hogwarts liedje af.
+  5. Toegankelijkheid ++
+  - Op beide pagina's is er een meer contrast mode. 
+  - Ik heb met een aria-label gewerkt bij de buttons zodat er geen leer meer of bekijk knoppen zijn. 
+  - Op de animatie is er een reduced motion modes, voor als je ziek word van het constante gedraai van de uil. Hij zal dan stoppen met draaien.
 
+
+  ### Je uitkomst - karakteristiek screenshots:
+  Home pagina:
+
+  <img src="readme-images/home-dark-v4.png" width="375px" alt="Dark modus home pagina">
+  <img src="readme-images/home-light-v4.png" width="375px" alt="Light modus home pagina">
+  <img src="readme-images/home-contrast-v4.png" width="375px" alt="More contrast modus home pagina">
+
+  For kids pagina:
+
+  <img src="readme-images/forkids-dark-v4.png" width="375px" alt="Dark modus for kids pagina">
+  <img src="readme-images/forkids-light-v4.png" width="375px" alt="Light modus for kids pagina">
+  <img src="readme-images/forkids-contrast-v4.png" width="375px" alt="More contrast modus for kids pagina">
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Ik heb geleerd hoe :root werkt en hoe ik hiermee met weinig moeite toch dingen zoals een thema switcher kan maken of rekening kan houden met ligt en dark mode of contrast.
+  <img src="readme-images/screen-home-roots.png" width="375px" alt="roots code van home pagina">
+  <img src="readme-images/screen-theme-roots.png" width="375px" alt="roots code van de kerst thema switcher">
+  <img src="readme-images/screen-forkids-roots.png" width="375px" alt="roots code van de for kids pagina">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/" width="375px" alt="bummer">
 </details>
 
 
@@ -346,6 +370,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   5. Animatie op image - bron: https://imagekit.io/blog/creating-css-image-effects/
   6. Prefers reduced motion - bron: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion 
   7. Aria-label hoe werkt het? - bron: https://stackoverflow.com/questions/22039910/what-is-aria-label-and-how-should-i-use-it
-
+  8. Dark & light scheme - bron: https://stuffandnonsense.co.uk/blog/redesigning-your-product-and-website-for-dark-mode
+  9. Voor het positioneren van elementen op de webite - bron: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+  
 
 </details>

@@ -341,9 +341,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Dit ging goed/Heb ik geleerd: 
   Ik heb geleerd hoe :root werkt en hoe ik hiermee met weinig moeite toch dingen zoals een thema switcher kan maken of rekening kan houden met ligt en dark mode of contrast.
+
   <img src="readme-images/screen-home-roots.png" width="375px" alt="roots code van home pagina">
   <img src="readme-images/screen-theme-roots.png" width="375px" alt="roots code van de kerst thema switcher">
   <img src="readme-images/screen-forkids-roots.png" width="375px" alt="roots code van de for kids pagina">
+
+  Ik heb geleerd hoe aria-labels werken en dat je ze zowel op buttons als linkjes kan zetten.
+
+  <img src="readme-images/" width="375px" alt="aria-label">
 
 
   ### Dit was lastig/Is niet gelukt:

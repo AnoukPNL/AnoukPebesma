@@ -9,15 +9,15 @@ var nav = document.querySelector("header nav:first-of-type");
 // Luister als dit gebeurd voeg je toe
 // Toggle ipv add - want dan blijft hij aanwezig en kun je er vaker op drukken.
 navbutton.addEventListener("click", function(){
-    nav.classList.toggle("open")
-})
+    nav.classList.toggle("open");
+});
 
 
 // Thema switch
 var themaswitchelement = document.querySelector("footer button");
 
 function themaswitch(){
-    document.documentElement.classList.toggle("newtheme")
+    document.documentElement.classList.toggle("newtheme");
 }
 
 themaswitchelement.addEventListener("click",themaswitch);

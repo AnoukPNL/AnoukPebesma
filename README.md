@@ -348,13 +348,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Ik heb geleerd hoe aria-labels werken en dat je ze zowel op buttons als linkjes kan zetten.
 
-  <img src="readme-images/" width="375px" alt="aria-label">
+  <img src="readme-images/screen-aria-label.png" width="375px" alt="aria-label">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
 
-  <img src="readme-images/" width="375px" alt="bummer">
+  Toen ik de site eindelijk af had, wou ik hem naar Github updaten. Nou kreeg ik een error die ik hiervoor nooit eerder heb gehad. Er was iets mis met de deploy? Ik heb een aantal keer alle mapjes en bestanden geprobeerd opnieuw up te loaden. Dit leek niet te lukken. Ik heb aan mijn klasgenoten gevraagd of zij het antwoord wisten, toen zij het niet wisten heb ik het gevraagd aan de klassen assistenten.
+
+  <img src="readme-images/environments-error.png" width="375px" alt="deploy error">
+  <img src="readme-images/deploy-error.png" width="375px" alt="deploy error">
 </details>
 
 

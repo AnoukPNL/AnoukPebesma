@@ -377,6 +377,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   7. Aria-label hoe werkt het? - bron: https://stackoverflow.com/questions/22039910/what-is-aria-label-and-how-should-i-use-it
   8. Dark & light scheme - bron: https://stuffandnonsense.co.uk/blog/redesigning-your-product-and-website-for-dark-mode
   9. Voor het positioneren van elementen op de webite - bron: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+  10. Audio invoegen - bron: https://www.sitepoint.com/community/t/play-sound-on-hover-or-click-diffferent-audio-for-different-images/99391
   
 
 </details>

@@ -313,13 +313,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### 5 dingen van surface plane
   1. Dark / light mode
-  Ik heb mijn laptop altijd op dark mode staan, dus ik ben ook begonnen met het designen van de dark mode. Ik heb gezien dat hij bij anderen begon met de light modus, maar dan ziet het er toch net wat anders uit.
+  - Ik heb mijn laptop altijd op dark mode staan, dus ik ben ook begonnen met het designen van de dark mode. Ik heb gezien dat hij bij anderen begon met de light modus, maar dan ziet het er toch net wat anders uit.
   2. Custom theme
-  Ik heb bij de home pagina aan de onderkant van de pagina een thema switch button staan. Als je hier op klikt veranderd het thema naar een kerst thema.
+  - Ik heb bij de home pagina aan de onderkant van de pagina een thema switch button staan. Als je hier op klikt veranderd het thema naar een kerst thema.
   3. Animatie toevoegen
-  Ik heb bij de for kids pagina een animatie op het uil plaatje toegevoegd. 
+  - Ik heb bij de for kids pagina een animatie op het uil plaatje toegevoegd. 
   4. Geluid toevoegen
-  Als je op de animatie drukt van nummer 3, dan speelt er een hogwarts liedje af.
+  - Als je op de animatie drukt van nummer 3, dan speelt er een hogwarts liedje af.
   5. Toegankelijkheid ++
   - Op beide pagina's is er een meer contrast mode. 
   - Ik heb met een aria-label gewerkt bij de buttons zodat er geen leer meer of bekijk knoppen zijn. 

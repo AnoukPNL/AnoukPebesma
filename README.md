@@ -353,7 +353,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Dit was lastig/Is niet gelukt:
 
-  Toen ik de site eindelijk af had, wou ik hem naar Github updaten. Nou kreeg ik een error die ik hiervoor nooit eerder heb gehad. Er was iets mis met de deploy? Ik heb een aantal keer alle mapjes en bestanden geprobeerd opnieuw up te loaden. Dit leek niet te lukken. Ik heb aan mijn klasgenoten gevraagd of zij het antwoord wisten, toen zij het niet wisten heb ik het gevraagd aan de klassen assistenten.
+  Toen ik de site eindelijk af had, wou ik hem naar Github updaten. Nou kreeg ik een error die ik hiervoor nooit eerder heb gehad. Er was iets mis met de deploy? Ik heb een aantal keer alle mapjes en bestanden geprobeerd opnieuw up te loaden. Dit leek niet te lukken. Ik heb aan mijn klasgenoten gevraagd of zij het antwoord wisten, toen zij het niet wisten heb ik het gevraagd aan de klassen assistenten. Zij hebben niet optijd gereageerd.
 
   <img src="readme-images/environments-error.png" width="375px" alt="deploy error">
   <img src="readme-images/deploy-error.png" width="375px" alt="deploy error">
